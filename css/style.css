@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    min-height: 100vh;
+    padding: 10px 30px;
+}
+section{
+    background-image: url('/img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 600px 570px;
+}
+section h3{
+    font-size: 48px;
+    color: rgb(32,32,32);
+}
+section h1{
+    font-size: 66px;
+    width: 420px;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    padding: 0;
+    line-height: 54px;
+}
+section p{
+    width: 375px;
+    padding: 30px 0px;
+    color: rgb(158,158,158);
+    font-weight: 500;
+}
+section button{
+    background:#00c0ab;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 10px 50px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 500;
+}
+section button{
+    font-size: 14px;
+    float: right;
+    margin-top: -50px;
+}
+#search{
+    display: flex;
+    width: 632px;
+    border-radius: 60px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    box-sizing: 8px 11px 20px 5px rgb(207,205,205);
+}
+#search i{
+    color: rgb(139,136,136);
+    font-size: 22px;
+    padding: 14px 10px 10px 10px;
+    color: #000;
+}
+#search input{
+    outline: none;
+    border: none;
+}
+#search button{
+    margin: 0px;
+    font-size: 22px;
+    margin-left: 18px;
+}
+button:hover{
+    border: 2px solid #00c0ab;
+    background: #fff;
+    color: #00c0ab;
+}
+section h4{
+    font-size: 18px;
+    color: rgb(58,57,57);
+}
+section a img{
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    z-index: -1;
+}
+@media only screen and(max-width:960px)and (min-width:690px){
+    section{
+        background-size: 500px 490px;
+        background-position: 105% 40%;
+    }
+    section h1{
+        font-size: 36px;
+        margin-top: 320px;
+        line-height: 28px;
+    }
+}
+@media only screen and (max-width:690px){
+    section{
+        background-size: 470px 366px;
+        background-position: 100% 15%;
+    }
+    section h1{
+        font-size: 40px;
+        margin-top: 340px;
+        line-height: 40px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    section p{
+        margin-top: 10px;
+        width: 100%;
+        color: rgb(85,85,85);
+    }
+    #search{
+        width: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px;
+        box-shadow: -1px 6px 17px 20px rgb(207,205,205);
+    }
+    #search input{
+        width: calc(100% - 50px);
+        margin-left: 50px;
+        height: 40px;
+        margin-top: 30px;
+        padding-left: 10px;
+        margin-top: -40px;
+    }
+    #search button{
+        margin: 16px 0px;
+    }
+}
